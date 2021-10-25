@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Comandos HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <h1>Este é um título</h1>
+  <p>Este é um parágrafo</p>
+  <p>
+    quebra de linha <br />
+    se faz assim <br />
+    entendeu?
+  </p>
+  <p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/PNG_transparency_demonstration_2.png" width="200" height="90"/>
+  </p>
+  <p>
+      Para logar, acesse o site 
+      <a href="https://www.google.com" target="_blank">Google</a>
+  </p>
+
+<h3>Lista nao ordenada... Cores dos dados:</h3>
+<ul>
+    <li>Azul (li significa item da lista)</li>
+    <li>Vermelho</li>
+</ul>
+
+<h3>Lista oredenada... Cores dos dados:</h3>
+<ol>
+    <li>Verde</li>
+    <li>Amarelo</li>
+</ol>
+
+<h3>Lista de definicoes</h3>
+<dl>
+    <dt>dl: lista de definicoes</dt>
+    <dd>dt: termo da lista</dd>
+    <dd>dd: definicao do termo</dd>
+</dl>
+  
+<dl>
+    <dt>Cores do céu</dt>
+    <dd>azul</dd>
+    <dd>branco</dd>
+</dl>
+
+<h3>Tabela simples</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Produto(celula do cabeçalho uso a tag th)</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Hamburger(celula da tabela uso a tag td)</td>
+            <td>20,00</td>
+        </tr>
+        <tr>
+            <td>Fritas</td>
+            <td>10,00</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Tabela com colspan e rowspan</h3>
+<table border="1">
+    <tr>
+        <th>H1</th>
+        <th colspan="2">H2</th>
+    </tr>
+    <tr>
+        <td>H3</td>
+        <td>H4</td>
+        <td>H5</td>
+    </tr>
+    <tr>
+        <td rowspan="2">C1</td>
+        <td>C2</td>
+        <td>C3</td>
+    </tr>
+    <tr>
+        <td>C4</td>
+        <td>C5</td>
+    </tr>
+</table>
+<form>
+    <p>
+    <label for="itext">Este "for" da tag, vincula este label a este input através do msm nome do "id". Já o "name" do input é importante p qdo eu submeter o formulário. Campo de texto:</label>
+    <input name="itext" id="itext" type="text" />
+    </p>
+    <p>
+        <label for="itext2">Campo somente leitura:</label>
+        <input readonly name="itext2" id="itext2" value="Não editável" />
+    </p>
+    <p>
+        <label for="itext3">Campo desabilitado:</label>    
+        <input disabled name="itext3" id="itext3" value="Desabilitado" />
+    </p>
+    <p>
+        <label for="inum">Campo numérico:</label>    
+        <input id="inum" type="number" /> 
+    </p>
+    <p>
+        <label for="idata">Campos de data:</label>    
+        <input id="idata" type="date" />
+    </p>
+    <p>
+        <label for="ifile">Campo de arquivo:</label>
+        <input id="ifile" type="file" />
+    </p>
+    <p>
+        <label for="ipassw">Campo de senha:</label>
+        <input id="ipassw" type="password" />
+    </p>
+    <p>
+        Escolha sim ou não:<br />
+        <label><input name="iradio" type="radio" value="1" />Sim</label>
+        <label><input name="iradio" type="radio" value="0" />Não</label>
+    </p>
+    <p>
+        Esolha todas frutas que voce gosta: <br />
+        <label><input name="icheck" type="checkbox" value="1" />Banana</label>
+        <label><input name="icheck" type="checkbox" value="2" /> Laranja</label>
+        <labe><input name="icheck" type="checkbox" value="3" />Maçã</labe>
+        <label><input name="icheck" type="checkbox" value="4" />Uva</label>
+    </p>
+    <p>
+        Select Simples:
+        <select name="select">
+            <option value="valor1">Valor 1</option>
+            <option value="valor2" selected>Valor 2</option>
+            <option value="valor3">Valor 3</option>
+        </select>
+    </p>
+    <p>
+        Select Múltiplo:
+        <select name="select" multiple>
+            <option value="valor1">Valor 1</option>
+            <option value="valor2">Valor 2</option>
+            <option value="valor3">Valor3</option>
+        </select>
+    </p>
+    <p>
+        <label for="tarea">Área de texto:</label>
+        <textarea
+            id="tarea"
+            name="tarea"
+            rows="6"
+            placeholder="Se quiser q este botao abaixo submeta esta pagina, tem q ir na tag de abertura do form e colocar action...etc"
+        ></textarea>   
+    </p>
+    <p>
+        <input type="submit" value="Enviar Formulário" />
+    </p>
+</form>
+
+    <h3>Conteineres genéricos</h3>
+    <div>div-1</div>
+    <div>div-2</div>
+    <span>span-1</span> 
+    <span>span-2</span> 
+    <span>span-3</span> 
+
+    <h3>Conteineres Semânticos</h3>
+    <header>header</header>
+    <footer>footer</footer>
+    <nav>nav</nav>
+    <main>main</main>
+    <aside>aside</aside>
+    <article>article</article>
+    <section>section</section>
+<p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</p>
+</body>
